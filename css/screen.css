@@ -487,6 +487,7 @@ a:hover { text-decoration: underline; }
 .download__item li:hover .download__wt { color: #FFF; opacity: 0.4; }
 .download__item a { text-decoration: none; }
 .download__item .download__ico { display: inline-block; margin-left: 25px; margin-top: 0px; background: url('../_img/icons-s4e58c9bd76.png') 0 -407px no-repeat; width: 29px; height: 23px; vertical-align: top; }
+.download__item .download__img { display: inline-block; margin-left: 15px; margin-top: 0px; vertical-align: top; }
 .download__item .download__note { width: 520px; padding-left: 20px; display: inline-block; line-height: 1.2; }
 .download__item .download__title { font-weight: bold; color: #4eb6fa; font-size: 17px; font-family: "Calibri", Helvetica, sans-serif; }
 .download__item .download__wt { font-family: "Calibri", Helvetica, sans-serif; font-size: 14px; color: #323c41; }

@@ -1900,6 +1900,13 @@
 			@include s(download);
 			vertical-align: top;
 		}
+		.download__img{
+			display: inline-block;
+			margin-left: 15px;
+			margin-top: 0px;
+			//@include s(download);
+			vertical-align: top;
+		}
 		.download__note{
 			width: 520px;
 			padding-left: 20px;
