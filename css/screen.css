@@ -408,7 +408,7 @@ a:hover { text-decoration: underline; }
 
 .scrollable__cnt { position: relative; }
 
-.scrollable__media { width: 784px; overflow: hidden; }
+.scrollable__media { overflow: hidden; }
 .scrollable__media img { width: 100%; vertical-align: bottom; }
 
 .scrollable__next, .scrollable__prew { width: 42px; height: 42px; background: #4db7fc; position: absolute; top: 160px; }
@@ -428,7 +428,7 @@ a:hover { text-decoration: underline; }
 .scrollable__list i:hover { border: 7px solid #4db7fc; }
 
 .scrollable_small { margin-top: 0; margin-right: 20px; float: left; }
-.scrollable_small .scrollable__media { width: 445px; }
+.scrollable_small .scrollable__media { max-width: 445px; }
 .scrollable_small .scrollable__list li { width: 108px; height: 80px; }
 .scrollable_small .scrollable__list li:last-child i { width: 94px; height: 66px; }
 .scrollable_small .scrollable__list i { width: 94px; height: 66px; }

@@ -1585,7 +1585,7 @@
 		position: relative;
 	}
 	.scrollable__media{
-		width: 784px;
+		//width: 784px;
 		overflow: hidden;
 		img{
 			width: 100%;
@@ -1665,7 +1665,7 @@
 	margin-right: 20px;
 	float: left;
 	.scrollable__media{
-		width: 445px;
+		max-width: 445px;
 	}
 	.scrollable__list{
 		li{
