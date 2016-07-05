@@ -341,7 +341,7 @@ a:hover { text-decoration: underline; }
 .kat_mod2 { padding: 35px; font-family: "Calibri", Helvetica, sans-serif; font-size: 14px; line-height: 1.4; }
 .kat_mod2 .kat_mod__cont { padding: 40px 0 0 0px; width: 420px; float: left; }
 
-.js-masonry { margin-left: 11px; padding-bottom: 14px; }
+.js-masonry { margin-left: 10px; padding-bottom: 14px; }
 
 .photogallery__nav { list-style: none; margin-bottom: 10px; }
 .photogallery__nav li { height: 60px; padding: 0 50px; line-height: 60px; float: left; }
@@ -350,7 +350,7 @@ a:hover { text-decoration: underline; }
 .photogallery__nav .active a { font-family: 'Conv_DlCyRgTf', sans-serif; color: #fff; }
 .photogallery__nav a { font-size: 22px; font-family: 'Conv_DlCyRgTf', sans-serif; color: #1895e6; text-transform: uppercase; text-decoration: none; }
 
-.photogallery__item { margin: 14px 0px 0 14px; position: relative; float: left; }
+.photogallery__item { margin: 10px 10px 0; position: relative; float: left; width: 275px; height: 170px; }
 .photogallery__item i { width: 100%; height: 100%; position: absolute; top: 0; left: 0; z-index: 1000; }
 .photogallery__item i:hover { filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80); opacity: 0.8; background-color: #4db7fb; cursor: pointer; }
 
@@ -365,12 +365,19 @@ a:hover { text-decoration: underline; }
 .photogallery__item_small .photogallery__img img { height: 127px; }
 
 .photogallery__img { overflow: hidden; }
-.photogallery__img img { vertical-align: top; }
+.photogallery__img img { vertical-align: top; width: 100%; height: 170px; }
 .photogallery__img:hover { cursor: pointer; }
 
 .photogallery__title { padding: 10px 20px; background: #000; position: absolute; bottom: 0; left: 0; right: 0; }
 .photogallery__title h2 { text-transform: uppercase; font-family: 'Conv_DlCyLtTf', sans-serif; color: #FFF; }
 .photogallery__title .big { font-family: 'Conv_DlCyLtTf', sans-serif; font-weight: normal; font-size: 26px; }
+
+/*lastItem - it need to add, if there is just one element in last row. preLastItem - it need to add, if there are 2 elemens in last row. Two last elements must be with preLastItem and lastItem classes 	
+respectively. */
+.preLastItem { margin-left: 305px; }
+.preLastItem + .lastItem { margin-left: 10px; }
+
+.lastItem { margin-left: 442.5px; }
 
 .product { list-style-type: none; text-align: center; padding: 0 10px; }
 
@@ -981,6 +988,9 @@ a:hover { text-decoration: underline; }
   .contact-form textarea, .contact-form input { width: 100%; } }
 @media only screen and (min-width: 768px) and (max-width: 960px) { .header .nav { padding-top: 0px; }
   .header .nav .is-thereIsDropNaw { height: 27px; line-height: 27px; } }
+@media only screen and (min-width: 768px) and (max-width: 1322px) { .photogallery__item { margin: 10px 1% 0; width: 31%; transition: 0.2s; }
+  .preLastItem { margin-left: 16.5%; }
+  .lastItem { margin-left: 34%; } }
 @media only screen and (min-width: 320px) and (max-width: 767px) { .header .nav { height: auto; }
   .header .nav li { height: 31px; line-height: 31px; } }
 .lang a, .lang span { display: inline-block; padding: 3px 7px; text-decoration: none; font-family: "Calibri", Helvetica, sans-serif; color: #4db7fc; }
