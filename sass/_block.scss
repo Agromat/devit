@@ -1392,20 +1392,6 @@
 		}
 	}
 
-/*lastItem - it need to add, if there is just one element in last row.
-  preLastItem - it need to add, if there are 2 elemens in last row. Two last elements must be with preLastItem and lastItem classes 	
-respectively.
-  */
-	.preLastItem{
-		margin-left: 305px;
-		&+.lastItem{
-			margin-left: 10px;
-		}
-	}
-
-	.lastItem{
-		margin-left: 442.5px;
-	}
 // pduct
 .product{
 	// overflow: hidden;

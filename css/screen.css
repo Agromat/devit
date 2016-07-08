@@ -374,13 +374,6 @@ a:hover { text-decoration: underline; }
 .photogallery__title h2 { text-transform: uppercase; font-family: 'Conv_DlCyLtTf', sans-serif; color: #FFF; }
 .photogallery__title .big { font-family: 'Conv_DlCyLtTf', sans-serif; font-weight: normal; font-size: 26px; }
 
-/*lastItem - it need to add, if there is just one element in last row. preLastItem - it need to add, if there are 2 elemens in last row. Two last elements must be with preLastItem and lastItem classes 	
-respectively. */
-.preLastItem { margin-left: 305px; }
-.preLastItem + .lastItem { margin-left: 10px; }
-
-.lastItem { margin-left: 442.5px; }
-
 .product { list-style-type: none; text-align: center; padding: 0 10px; }
 
 .product__item { width: 25%; padding: 35px 0% 15px; display: inline-block; vertical-align: top; position: relative; text-align: center; }
