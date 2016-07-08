@@ -343,6 +343,8 @@ a:hover { text-decoration: underline; }
 
 .js-masonry { margin-left: 10px; padding-bottom: 14px; }
 
+.photogallery { text-align: center; }
+
 .photogallery__nav { list-style: none; margin-bottom: 10px; }
 .photogallery__nav li { height: 60px; padding: 0 50px; line-height: 60px; float: left; }
 .photogallery__nav .active { position: relative; background: #4db7fc; text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.2); }
@@ -350,7 +352,7 @@ a:hover { text-decoration: underline; }
 .photogallery__nav .active a { font-family: 'Conv_DlCyRgTf', sans-serif; color: #fff; }
 .photogallery__nav a { font-size: 22px; font-family: 'Conv_DlCyRgTf', sans-serif; color: #1895e6; text-transform: uppercase; text-decoration: none; }
 
-.photogallery__item { margin: 10px 10px 0; position: relative; float: left; width: 275px; height: 170px; }
+.photogallery__item { margin: 10px 10px 0; position: relative; width: 275px; height: 170px; display: inline-block; text-align: left; }
 .photogallery__item i { width: 100%; height: 100%; position: absolute; top: 0; left: 0; z-index: 1000; }
 .photogallery__item i:hover { filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80); opacity: 0.8; background-color: #4db7fb; cursor: pointer; }
 
