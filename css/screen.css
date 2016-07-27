@@ -278,24 +278,34 @@ a:hover { text-decoration: underline; }
 
 .kat__conteiner { width: auto; padding: 35px 0; border-left: 175px solid #000; background: #fff; font-size: 0; }
 
-.kat__media { width: 365px; margin-left: 30px; display: inline-block; position: relative; }
+.kat__media { width: 365px; margin-left: 30px; position: relative; display: inline-block; }
 .kat__media:hover { cursor: pointer; }
 .kat__media:hover .lupa { -moz-transition: opacity 0.3s; -o-transition: opacity 0.3s; -webkit-transition: opacity 0.3s; transition: opacity 0.3s; opacity: 1; }
 .kat__media .lupa { position: absolute; top: 50%; margin-top: -50px; left: 50%; margin-left: -51px; opacity: 0; background: url('../_img/icons-s4e58c9bd76.png') 0 -517px no-repeat; width: 103px; height: 100px; -moz-transition: opacity 0.3s; -o-transition: opacity 0.3s; -webkit-transition: opacity 0.3s; transition: opacity 0.3s; z-index: 10; }
 .kat__media a { display: block; position: relative; z-index: 100; }
 
+.showSchemeInfo { position: absolute; left: 200px; top: 470px; }
+
 .kat__descr { width: 43%; min-width: 300px; display: inline-block; padding-right: 0; vertical-align: top; }
 .kat__descr .kat__title-wrap { margin-left: 30px; }
 
-.kat__title { margin-bottom: 25px; font-family: "Calibri", Helvetica, sans-serif; font-size: 25px; line-height: 1; color: #4eb6fa; }
+.kat__title { margin-bottom: 20px; font-family: "Calibri", Helvetica, sans-serif; font-size: 25px; line-height: 1; color: #4eb6fa; }
 
 .kat__kode { margin-bottom: 5px; text-transform: uppercase; color: #323c41; opacity: 0.5; font-family: "Calibri", Helvetica, sans-serif; font-size: 14px; }
 
-.kat__group { height: 25px; line-height: 25px; padding: 0 10px; display: inline-block; background: #4fb8fc; text-decoration: none; font-size: 11px; color: #FFF; -moz-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; -webkit-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; }
+.kat__config h2 { font-size: 16px; margin: 25px 0 12px; color: #7f7f7f; }
+.kat__config .product-item { display: inline-block; margin: 0 25px 10px 0; }
+.kat__config .product-item a img { width: 80px; height: 80px; border: 1px solid #e5e5e5; }
+.kat__config .product-item a span { display: block; font-size: 14px; }
+.kat__config .product-item a .brand { font-weight: bold; color: #4fb8fc; margin-top: 5px; }
+.kat__config .product-item a .model { color: #b1b2b2; text-transform: uppercase; }
+
+.kat__group { height: 25px; line-height: 25px; padding: 0 10px; display: inline-block; background: #4fb8fc; text-decoration: none; font-size: 11px; color: #FFF; float: left; -moz-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; -webkit-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; }
 .kat__group span { margin-left: 10px; text-transform: uppercase; }
 .kat__group:hover { -moz-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; -webkit-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; background: #48a5e1; text-decoration: none; }
 
 .kat__info { margin-top: 25px; font-family: "Calibri", Helvetica, sans-serif; font-size: 14px; line-height: 1.2; color: rgba(50, 60, 65, 0.77); }
+.kat__info table { width: 365px; height: 44px; }
 
 .kat__wrap { margin-top: 40px; margin-left: 30px; padding-bottom: 50px; font-size: 14px; }
 
@@ -655,7 +665,7 @@ a:hover { text-decoration: underline; }
 .lteie8 .active .product__list { background: #4db7fc; }
 
 @media only screen and (min-width: 1200px) and (max-width: 9900px) { .header { width: 1200px; margin: 0 auto; }
-  .kat__descr { width: 55%; }
+  .kat__descr { width: 56%; }
   .h1 { width: 1200px; margin: 30px auto; }
   .wrap { width: 90%; max-width: 1200px; }
   .wrap .scroll__cont_news { overflow: hidden; }
@@ -741,13 +751,12 @@ a:hover { text-decoration: underline; }
   .news .news__item { width: 210px; margin-left: 10px; }
   .js-masonry { margin-left: 13px; }
   .photogallery__item { margin: 14px 1% 0 1%; width: 47%; }
-  .kat__media { width: 265px; margin-left: 2.5%; margin-right: 0; }
+  .kat__media { width: 265px; margin-right: 0; }
   .kat__media:before { top: 80px; left: 85px; }
   .kat__media img { width: 265px; }
-  .kat__descr { margin-left: 2.5%; }
+  .kat__media, .kat__descr, .kat__wrap { margin-left: 2.5%; }
   .kat__descr .kat__title-wrap { margin-left: 0; }
   .kat__descr .kat__wrap { margin-left: 0; }
-  .kat__wrap { margin-left: 2.5%; }
   .slider { width: auto; overflow: hidden; }
   .slider .item__conteiner { width: auto; margin-left: 0; float: none; }
   .scrollable__list li { width: 16.6%; }
@@ -774,7 +783,8 @@ a:hover { text-decoration: underline; }
   .proj__item:nth-child(3n+6) .proj__img { position: static; }
   .proj__item:nth-child(3n+6) .triangle { top: 260px; left: auto; right: 15px; }
   .proj__border { width: 100%; }
-  .proj__img { width: auto; } }
+  .proj__img { width: auto; }
+  .kat__info table { width: 265px; } }
 @media only screen and (min-width: 320px) and (max-width: 767px) { .out { background: url(../_img/bg.jpg) 0% 0px no-repeat; }
   .lang { display: none; }
   .header { position: fixed; width: 100%; left: 0; right: 0; z-index: 3000; }
@@ -983,6 +993,8 @@ a:hover { text-decoration: underline; }
   .header .nav .is-thereIsDropNaw { height: 27px; line-height: 27px; } }
 @media only screen and (min-width: 320px) and (max-width: 767px) { .header .nav { height: auto; }
   .header .nav li { height: 31px; line-height: 31px; } }
+@media only screen and (min-width: 320px) and (max-width: 787px) { .showSchemeInfo { position: static; }
+  .kat__descr { width: 90%; } }
 .lang a, .lang span { display: inline-block; padding: 3px 7px; text-decoration: none; font-family: "Calibri", Helvetica, sans-serif; color: #4db7fc; }
 
 .search input { border: 1px solid #e3e6e8; padding: 0 10px; height: 29px; font-family: "Calibri", Helvetica, sans-serif; }
@@ -1025,9 +1037,9 @@ a:hover { text-decoration: underline; }
 
 .kat__conteiner { width: auto; padding: 35px 0; border-left: 175px solid #000; background: #fff; font-size: 0; }
 
-.kat__title { margin-bottom: 25px; font-family: "Calibri", Helvetica, sans-serif; font-size: 25px; line-height: 1; color: #4eb6fa; }
+.kat__title { margin-bottom: 20px; font-family: "Calibri", Helvetica, sans-serif; font-size: 25px; line-height: 1; color: #4eb6fa; }
 
-.kat__kode { margin-bottom: 5px; text-transform: uppercase; color: #323c41; opacity: 0.5; font-family: "Calibri", Helvetica, sans-serif; font-size: 14px; }
+.kat__kode { margin-bottom: 5px; text-transform: uppercase; color: #323c41; opacity: 0.5; font-family: "Calibri", Helvetica, sans-serif; font-size: 14px; display: inline-block; margin-left: 15px; }
 
 .kat__info { margin-top: 25px; font-family: "Calibri", Helvetica, sans-serif; font-size: 14px; line-height: 1.2; color: rgba(50, 60, 65, 0.77); }
 

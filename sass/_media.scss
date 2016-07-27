@@ -6,7 +6,7 @@
 		margin: 0 auto;
 	}
 	.kat__descr{
-		width: 55%;
+		width: 56%;
 	}
 	.h1{
 		width: 1200px;
@@ -427,7 +427,6 @@
 	// catalogue_item.html
 	.kat__media{
 		width: 265px;
-		margin-left: 2.5%;
 		margin-right: 0;
 		&:before{
 			top: 80px;
@@ -437,17 +436,16 @@
 			width: 265px;
 		}
 	}
-	.kat__descr {
+	.kat__media, .kat__descr, .kat__wrap{
 		margin-left: 2.5%;
+	}
+	.kat__descr {
 		.kat__title-wrap{
 			margin-left: 0;
 		}
 		.kat__wrap{
 			margin-left: 0;
 		}
-	}
-	.kat__wrap{
-		margin-left: 2.5%;
 	}
 	// catalogue_section.html
 	
@@ -587,6 +585,12 @@
 		.proj__img{
 			width: auto;
 		}
+
+	.kat__info{
+		table{
+			width: 265px;
+		}
+	}
 }
 @media only screen and (min-width: 320px) and (max-width: 767px) {
 	// layout for all pages
@@ -1547,7 +1551,6 @@
 			}
 		}
 	}
-
 	.slider_proj{
 		.slider__list{
 			li{
@@ -1563,7 +1566,6 @@
 		margin: 0 3%;
 		@include box;
 	}
-
 }
 
 @media only screen and (min-width: 500px) and (max-width: 880px){
@@ -1620,6 +1622,11 @@
 		}		
 	}
 }
-
-
-
+@media only screen and (min-width: 320px) and (max-width: 787px){
+	.showSchemeInfo{
+		position: static;
+	}
+	.kat__descr{
+		width: 90%;
+	}
+}
