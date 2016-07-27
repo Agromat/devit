@@ -1,5 +1,5 @@
 ////////////////////////// * media screen *////////////////////////////
-@media only screen and (min-width: 1200px) and (max-width: 9900px) {
+@media only screen and (min-width: 1200px) and (max-width: 9900px){
 	// layout for all pages
 	.header{
 		width: 1200px;
@@ -93,24 +93,22 @@
 			// height: 100%;
 		}
 	}
-		.slider__bg{
-			margin-right: 200px;
-			a{
-				display: block;
-			}
+	.slider__bg{
+		margin-right: 200px;
+		a{
+			display: block;
 		}
+	}
 	.news{
 		&:after{
 			width: 100%;
 			background: url(../_img/icons/news_btm2.png) 0 0px repeat-x;
 		}
-
 	}
-		.news__items{
-			margin-right: 0;
+	.news__items{
+		margin-right: 0;
 			// margin-left: 80px;
 		}
-
 	// inner_buy.html
 	.slider_innerBuy{
 		width: 1200px;
@@ -120,7 +118,6 @@
 			width: 1025px;
 		}
 	}
-
 	.sity{
 		width: 21%;
 		height: 170px;
@@ -130,9 +127,9 @@
 		width: 1025px;
 	}
 	// catalogue_section.html
-		.product__item{
-			width: 20%;
-		}
+	.product__item{
+		width: 20%;
+	}
 	// inner_about-service.html
 	.kat_mod2 {
 		.kat_mod__cont{
@@ -197,7 +194,7 @@
 	// inner_one.html
 	.proj__item{
 		width: 25%;
-		proj__border {
+		.proj__border {
 			width: 100%;
 		}
 		.proj__img {
@@ -252,8 +249,51 @@
 		// width: auto;
 	}
 }
-
-@media only screen and (min-width: 768px) and (max-width: 960px) {
+@media only screen and (min-width: 1200px) and (max-width: 1216px){
+	.wrap_index{
+		.slider{
+			width: 90%;
+			margin: 0 auto;
+		}
+	}
+	.header, .footer__wrap{
+		width: 90%;
+		margin: 0 auto;
+	}
+	.h1{
+		width: 90%;
+		margin: 30px auto;
+	}
+	.some-info{
+		width: 90%;
+		margin: 60px auto 50px;
+	}
+}
+@media only screen and (min-width: 961px) and (max-width: 989px){
+	.footer__wrap, .header{
+		padding: 0 10px;
+		@include box;
+	}
+	.copyright{
+		.copyright__info{
+			right: 10px;
+		}
+	}
+}
+@media only screen and (min-width: 961px) and (max-width: 972px){
+	.news__items{
+		a{
+			margin-left: 0;
+			padding: 0 40px;
+		}
+	}
+}
+@media only screen and (min-width: 959px) and (max-width: 976px){
+	.wrap, .content, .slider, .news:after{
+		width: 100%;
+	}
+}
+@media only screen and (min-width: 768px) and (max-width: 960px){
 	// layout for all pages
 	.header{
 		padding: 0 9px;
@@ -317,9 +357,6 @@
 	}
 	.nav{
 		width: auto;
-		li{
-
-		}
 		a,span{
 			padding: 6px 4px;
 			font-size: 11px;
@@ -335,7 +372,6 @@
 		padding-bottom: 30px;
 		display: block;
 	}
-
 	.sub-nav{
 		// display: none;
 		span,a{
@@ -448,7 +484,6 @@
 		}
 	}
 	// catalogue_section.html
-	
 	// .product__item{
 	// 	width: 48%;
 	// }
@@ -579,20 +614,84 @@
 			}
 		}
 	}
-		.proj__border{
-			width: 100%;
-		}
-		.proj__img{
-			width: auto;
-		}
-
+	.proj__border{
+		width: 100%;
+	}
+	.proj__img{
+		width: auto;
+	}
 	.kat__info{
 		table{
 			width: 265px;
 		}
 	}
+	// mod for nav
+	.header{
+		.nav{
+			padding-top: 0px;
+		// margin-top: 0;
+		.is-thereIsDropNaw{
+			height: 27px;
+			line-height: 27px;
+		}
+	}
 }
-@media only screen and (min-width: 320px) and (max-width: 767px) {
+@media only screen and (min-width: 767px) and (max-width: 844px){
+	.h1{
+		span{
+			&:after, &:before{
+				content:none;
+			}
+		}
+	}
+}
+@media only screen and (min-width: 650px) and (max-width: 767px){
+	.slider_collectionMod{
+		.slider__item{
+			width: 46%;
+			margin: 0 2% 3% !important;
+		}
+	}
+}
+@media only screen and (min-width: 571px) and (max-width: 767px){
+	.sity{
+		width: 46%;
+		padding: 2%;
+	}
+}
+@media only screen and (min-width: 500px) and (max-width: 880px){
+	.support{ 
+		margin: 0 auto 20px;
+		float: none;
+		width: 80%;
+		@include box;
+	}
+	.contact-form{
+		margin: 0 auto 20px;
+		float: none;
+		width: 80%;
+		@include box;
+	}
+}
+@media only screen and (min-width: 483px) and (max-width: 767px){
+	.proj__item{
+		width: 50%;
+		float: left;
+	}
+	.proj__border{
+		width: 100%;
+	}
+}
+@media only screen and (min-width: 440px) and (max-width: 767px){
+	.product__item{
+		width: 50%;
+		margin: 0;
+	}
+	.proj__img{
+		width: auto;
+	}
+}
+@media only screen and (min-width: 320px) and (max-width: 767px){
 	// layout for all pages
 	.out{
 		background: url(../_img/bg.jpg) 0% 0px no-repeat;
@@ -758,8 +857,8 @@
 		}
 		.footer__map{
 			display: block;
-    		margin: 10px auto;
-    		text-align: center;
+			margin: 10px auto;
+			text-align: center;
 		}
 	}
 	// index.html
@@ -957,8 +1056,8 @@
 		}
 	}
 	.photogallery__nav{
-	    width: 100%;
-	    margin: 9px 3% 19px;
+		width: 100%;
+		margin: 9px 3% 19px;
 		display: block;
 		li{
 			padding: 0;
@@ -1326,45 +1425,6 @@
 	#choose-sity{
 		width: 100%;
 	}
-}
-@media only screen and (min-width: 320px) and (max-width: 482px) {
-	.proj__item{
-		width: 100%;
-	}
-	.proj__img{
-		width: 100%;
-		img{
-			width: 100%;
-		}
-	}
-	.proj__border{
-		width: 100%;
-	}
-	.proj__item_ImgBottom {
-		.proj__img{
-			margin-top: 0;
-			position: static;
-		}
-		.proj__descr{
-			position: static !important;
-		}
-		.triangle{
-			top: 260px;
-			left: auto;
-			right: 15px;
-		}
-	}
-}
-@media only screen and (min-width: 483px) and (max-width: 767px) {
-	.proj__item{
-		width: 50%;
-		float: left;
-	}
-		.proj__border{
-			width: 100%;
-		}
-}
-@media only screen and (min-width: 320px) and (max-width: 767px) {
 	// inner_one.html
 	.proj{
 		width: 90%;
@@ -1386,67 +1446,6 @@
 	// 		top: 0;
 	// 	}
 	// }
-}
-@media only screen and (min-width: 100px) and (max-width: 439px) {
-	.product__item{
-		width: 90%;
-		margin: 0 4%;
-	}
-}
-@media only screen and (min-width: 440px) and (max-width: 767px) {
-	.product__item{
-		width: 50%;
-		margin: 0;
-	}
-		.proj__img{
-			width: auto;
-		}
-}
-
-@media only screen and (min-width: 100px) and (max-width: 570px) {
-	.sity{
-		width: 96%;
-		padding: 2%;
-	}
-}
-@media only screen and (min-width: 571px) and (max-width: 767px) {
-	.sity{
-		width: 46%;
-		padding: 2%;
-	}
-}
-@media only screen and (min-width: 320px) and (max-width: 649px) {
-	.slider_collection{
-		.slider__item{
-			width: 90%;
-			margin: 0 5% 3% !important;
-			&:nth-child(4n+1){
-				margin: 0 5%;
-			}
-			&:nth-child(4n){
-				margin: 0 5%;
-			}
-		}
-	}
-}
-@media only screen and (min-width: 650px) and (max-width: 767px) {
-	.slider_collectionMod{
-		.slider__item{
-			width: 46%;
-			margin: 0 2% 3% !important;
-		}
-	}
-}
-@media only screen and (min-width: 767px) and (max-width: 844px) {
-	.h1{
-		span{
-			&:after, &:before{
-				content:none;
-			}
-		}
-	}
-}
-@media only screen and (min-width: 320px) and (max-width: 767px) {
 	.some-info{
 		margin-top: 0;
 		margin-bottom: 0;
@@ -1462,9 +1461,6 @@
 			}
 		}
 	}
-}
-
-@media only screen and (min-width: 320px) and (max-width: 767px){
 	.footer__right{
 		overflow: hidden;
 		li{
@@ -1474,58 +1470,6 @@
 			clear: both;
 		}
 	}
-}
-
-@media only screen and (min-width: 961px) and (max-width: 972px){
-	.news__items{
-		a{
-			margin-left: 0;
-			padding: 0 40px;
-		}
-	}
-}
-@media only screen and (min-width: 959px) and (max-width: 976px) { 
-	.wrap, .content, .slider, .news:after{
-		width: 100%;
-	}
-}
-
-
-
-@media only screen and (min-width: 1200px) and (max-width: 1216px) {
-	.wrap_index{
-		.slider{
-			width: 90%;
-			margin: 0 auto;
-		}
-	}
-	.header, .footer__wrap{
-		width: 90%;
-		margin: 0 auto;
-	}
-	.h1{
-		width: 90%;
-		margin: 30px auto;
-	}
-	.some-info{
-		width: 90%;
-		margin: 60px auto 50px;
-	}
-}
-
-@media only screen and (min-width: 961px) and (max-width: 989px){
-	.footer__wrap, .header{
-		padding: 0 10px;
-		@include box;
-	}
-	.copyright{
-		.copyright__info{
-			right: 10px;
-		}
-	}
-}
-
-@media only screen and (min-width: 320px) and (max-width: 767px){
 	.slider_collection, .slider_proj{
 		.slider__list{
 			li{
@@ -1566,23 +1510,65 @@
 		margin: 0 3%;
 		@include box;
 	}
-}
-
-@media only screen and (min-width: 500px) and (max-width: 880px){
-	.support{ 
-		margin: 0 auto 20px;
-		float: none;
-		width: 80%;
-		@include box;
+	.header{
+		.nav{
+			height: auto;
+			li{
+				height: 31px;
+				line-height: 31px;
+			}
+		}		
 	}
-	.contact-form{
-		margin: 0 auto 20px;
-		float: none;
-		width: 80%;
-		@include box;
+	.showSchemeInfo{
+		position: static;
+	}
+	.kat__descr{
+		width: 90%;
 	}
 }
-@media only screen and (min-width: 320px) and (max-width: 499px) {
+@media only screen and (min-width: 320px) and (max-width: 482px){
+	.proj__item{
+		width: 100%;
+	}
+	.proj__img{
+		width: 100%;
+		img{
+			width: 100%;
+		}
+	}
+	.proj__border{
+		width: 100%;
+	}
+	.proj__item_ImgBottom {
+		.proj__img{
+			margin-top: 0;
+			position: static;
+		}
+		.proj__descr{
+			position: static !important;
+		}
+		.triangle{
+			top: 260px;
+			left: auto;
+			right: 15px;
+		}
+	}
+}
+@media only screen and (min-width: 320px) and (max-width: 649px){
+	.slider_collection{
+		.slider__item{
+			width: 90%;
+			margin: 0 5% 3% !important;
+			&:nth-child(4n+1){
+				margin: 0 5%;
+			}
+			&:nth-child(4n){
+				margin: 0 5%;
+			}
+		}
+	}
+}
+@media only screen and (min-width: 320px) and (max-width: 499px){
 	.support{
 		width: auto;
 		margin: 0px 0 20px;
@@ -1597,36 +1583,15 @@
 		}
 	}
 }
-
-// mod for nav
-@media only screen and (min-width: 768px) and (max-width: 960px) {
-	.header{
-		.nav{
-			padding-top: 0px;
-			// margin-top: 0;
-			.is-thereIsDropNaw{
-				height: 27px;
-				line-height: 27px;
-			}
-		}
+@media only screen and (min-width: 100px) and (max-width: 570px){
+	.sity{
+		width: 96%;
+		padding: 2%;
 	}
 }
-@media only screen and (min-width: 320px) and (max-width: 767px) {
-	.header{
-		.nav{
-			height: auto;
-			li{
-				height: 31px;
-				line-height: 31px;
-			}
-		}		
-	}
-}
-@media only screen and (min-width: 320px) and (max-width: 787px){
-	.showSchemeInfo{
-		position: static;
-	}
-	.kat__descr{
+@media only screen and (min-width: 100px) and (max-width: 439px){
+	.product__item{
 		width: 90%;
+		margin: 0 4%;
 	}
 }
