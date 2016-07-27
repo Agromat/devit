@@ -93,20 +93,20 @@
 			// height: 100%;
 		}
 	}
-	.slider__bg{
-		margin-right: 200px;
-		a{
-			display: block;
+		.slider__bg{
+			margin-right: 200px;
+			a{
+				display: block;
+			}
 		}
-	}
 	.news{
 		&:after{
 			width: 100%;
 			background: url(../_img/icons/news_btm2.png) 0 0px repeat-x;
 		}
 	}
-	.news__items{
-		margin-right: 0;
+		.news__items{
+			margin-right: 0;
 			// margin-left: 80px;
 		}
 	// inner_buy.html
@@ -127,9 +127,9 @@
 		width: 1025px;
 	}
 	// catalogue_section.html
-	.product__item{
-		width: 20%;
-	}
+		.product__item{
+			width: 20%;
+		}
 	// inner_about-service.html
 	.kat_mod2 {
 		.kat_mod__cont{
@@ -614,12 +614,13 @@
 			}
 		}
 	}
-	.proj__border{
-		width: 100%;
-	}
-	.proj__img{
-		width: auto;
-	}
+		.proj__border{
+			width: 100%;
+		}
+		.proj__img{
+			width: auto;
+		}
+
 	.kat__info{
 		table{
 			width: 265px;
@@ -629,10 +630,11 @@
 	.header{
 		.nav{
 			padding-top: 0px;
-		// margin-top: 0;
-		.is-thereIsDropNaw{
-			height: 27px;
-			line-height: 27px;
+			// margin-top: 0;
+			.is-thereIsDropNaw{
+				height: 27px;
+				line-height: 27px;
+			}
 		}
 	}
 }
@@ -678,17 +680,25 @@
 		width: 50%;
 		float: left;
 	}
-	.proj__border{
-		width: 100%;
-	}
+		.proj__border{
+			width: 100%;
+		}
 }
 @media only screen and (min-width: 440px) and (max-width: 767px){
 	.product__item{
 		width: 50%;
 		margin: 0;
 	}
-	.proj__img{
-		width: auto;
+		.proj__img{
+			width: auto;
+		}
+}
+@media only screen and (min-width: 320px) and (max-width: 787px){
+	.showSchemeInfo{
+		position: static;
+	}
+	.kat__descr{
+		width: 90%;
 	}
 }
 @media only screen and (min-width: 320px) and (max-width: 767px){
@@ -857,8 +867,8 @@
 		}
 		.footer__map{
 			display: block;
-			margin: 10px auto;
-			text-align: center;
+    		margin: 10px auto;
+    		text-align: center;
 		}
 	}
 	// index.html
@@ -1056,8 +1066,8 @@
 		}
 	}
 	.photogallery__nav{
-		width: 100%;
-		margin: 9px 3% 19px;
+	    width: 100%;
+	    margin: 9px 3% 19px;
 		display: block;
 		li{
 			padding: 0;
@@ -1519,40 +1529,6 @@
 			}
 		}		
 	}
-	.showSchemeInfo{
-		position: static;
-	}
-	.kat__descr{
-		width: 90%;
-	}
-}
-@media only screen and (min-width: 320px) and (max-width: 482px){
-	.proj__item{
-		width: 100%;
-	}
-	.proj__img{
-		width: 100%;
-		img{
-			width: 100%;
-		}
-	}
-	.proj__border{
-		width: 100%;
-	}
-	.proj__item_ImgBottom {
-		.proj__img{
-			margin-top: 0;
-			position: static;
-		}
-		.proj__descr{
-			position: static !important;
-		}
-		.triangle{
-			top: 260px;
-			left: auto;
-			right: 15px;
-		}
-	}
 }
 @media only screen and (min-width: 320px) and (max-width: 649px){
 	.slider_collection{
@@ -1580,6 +1556,34 @@
 		margin: 0 5%;
 		textarea, input{
 			width: 100%;
+		}
+	}
+}
+@media only screen and (min-width: 320px) and (max-width: 482px){
+	.proj__item{
+		width: 100%;
+	}
+	.proj__img{
+		width: 100%;
+		img{
+			width: 100%;
+		}
+	}
+	.proj__border{
+		width: 100%;
+	}
+	.proj__item_ImgBottom {
+		.proj__img{
+			margin-top: 0;
+			position: static;
+		}
+		.proj__descr{
+			position: static !important;
+		}
+		.triangle{
+			top: 260px;
+			left: auto;
+			right: 15px;
 		}
 	}
 }
