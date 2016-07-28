@@ -3,15 +3,25 @@
 <!--[if gt IE 8]><!--><html><!--<![endif]-->
 <head>
 	<meta charset="utf-8">
-	<title>Template</title>
-	<meta name="viewport" content="width=device-width"/>
-	<link rel="stylesheet" media="screen" href="css/screen.css" >
+	<meta content="Коллекции каталога сантехники торговой марки Devit" name="description" />
+
+	<title>Все коллекции торговой марки Devit</title>        <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" media="screen" href="css/screen.css?1467627816" >
+	<script src="js/jquery.js"></script>
 	<script src="js/jquery.tools.min.js"></script>
+	<script src="js/jquery.cycle2.min.js"></script>
 	<script src="js/modernizr-transitions.js"></script>
-	<script src="js/jquery.masonry.min.js"></script>
-
-
+	<script src="js/jquery.scrollTo.js"></script>
+	<!--<script src="js/jquery.masonry.min.js"></script>-->
 	<script src="js/common.js"></script>
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		ga('create', 'UA-5482593-6', 'devit-bathroom.com');
+		ga('send', 'pageview');
+	</script>
 </head>
 <body>
 	<!-- BEGIN out -->
@@ -22,362 +32,271 @@
 			<div class="header">
 				<div class="header__toppper">
 					<div class="lang">
-						<a href="#" class="active">Рус</a>
-						<a href="#">It</a>
-						<a href="#">Eng</a>
+						<a href="/ru/catalogue/collections" class="active">Рус</a>
+						<a href="/it/catalogue/collections" >Ita</a>
+						<a href="/en/catalogue/collections" >Eng</a>
 					</div>
 					<div class="search">
-						<form action="">
-							<input type="text" placeholder="Поиск по сайту">
+						<form action="/ru/search" method="post">
+							<input type="text" name="keyword" placeholder="Поиск по сайту" value="">
 							<button type="submit" value=""><span>Поиск</span></button>
 						</form>
 					</div>
 				</div>
 
 				<div class="header__general">
-					<a href="#" class="logo"></a>
+					<a href="/ru/" class="logo"></a>
 					<div class="navMobile"></div>
 					<ul class="nav">
-						<li><a href="#">lorem 1</a></li>
-						<li class="active"><a href="#">lorem 2</a>
+						<li ><a href="/ru/">Главная</a></li>
+						<li class="active is-thereIsDropNaw"><a href="/ru/catalogue">Каталог</a>
 							<ul class="sub-nav">
-								<li><a href="#">Колекции</a></li>
-								<li><a href="#">Тип товара</a></li>
-							</ul>
-						</li>
-						<li><a href="#">lorem 3</a></li>
-						<li><a href="#">lorem 4</a></li>
-						<li><a href="#">lorem 5</a></li>
-						<li><a href="#">lorem 6</a></li>
-						<li><a href="#">lorem 7</a></li>
-						<li><a href="#">lorem 8</a></li>
-					</ul>
-				</div>
-			</div>
-			<!-- END header -->
-			<!-- BEGIN content -->
-			<div class="content content_subNav">
-				<h1 class="h33">Каталог <i class="i_waves"></i></h1>
-
-				<!-- BEGIN kat -->
-				<div class="kat">
-					<ul class="photogallery__nav">
-						<li class="active"><a href="#">Коллекции</a></li>
-						<li><a href="#">Тип товара</a></li>
-					</ul>
-					<div id="container" class="js-masonry photogallery">
-
-						<div class="photogallery__item photogallery__item_w100 photogallery__item_long">
-							<i></i>
-							<div class="photogallery__img">
-								<img src="img/mass1.jpg" alt="">
-							</div>
-							<div class="photogallery__title">
-								<h2 class="big">AUROra</h2>
-							</div>
-						</div>
-
-						<div class="photogallery__item photogallery__item_w50 photogallery__item_average">
-							<i></i>
-							<div class="photogallery__img">
-								<img src="img/mass2.jpg" alt="">
-							</div>
-							<div class="photogallery__title">
-								<h2 class="big">AUROra</h2>
-							</div>
-						</div>
-
-						<div class="photogallery__item photogallery__item_w50 photogallery__item_small">
-							<i></i>
-							<div class="photogallery__img">
-								<img src="img/mass3.jpg" alt="">
-							</div>
-							<div class="photogallery__title">
-								<h2 class="big">AUROra</h2>
-							</div>
-						</div>
-
-						<div class="photogallery__item photogallery__item_w50 photogallery__item_long">
-							<i></i>
-							<div class="photogallery__img">
-								<img src="img/mass4.jpg" alt="">
-							</div>
-							<div class="photogallery__title">
-								<h2 class="big">AUROra</h2>
-							</div>
-						</div>
-
-						<div class="photogallery__item photogallery__item_w50 photogallery__item_average">
-							<i></i>
-							<div class="photogallery__img">
-								<img src="img/mass2.jpg" alt="">
-							</div>
-							<div class="photogallery__title">
-								<h2 class="big">AUROra</h2>
-							</div>
-						</div>
-
-						<div class="photogallery__item photogallery__item_w50 photogallery__item_small">
-							<i></i>
-							<div class="photogallery__img">
-								<img src="img/mass3.jpg" alt="">
-							</div>
-							<div class="photogallery__title">
-								<h2 class="big">AUROra</h2>
-							</div>
-						</div>
-
-						<div class="photogallery__item photogallery__item_w100 photogallery__item_long">
-							<i></i>
-							<div class="photogallery__img">
-								<img src="img/mass1.jpg" alt="">
-							</div>
-							<div class="photogallery__title">
-								<h2 class="big">AUROra</h2>
-							</div>
-						</div>
-
-						<div class="photogallery__item photogallery__item_w50 photogallery__item_average">
-							<i></i>
-							<div class="photogallery__img">
-								<img src="img/mass2.jpg" alt="">
-							</div>
-							<div class="photogallery__title">
-								<h2 class="big">AUROra</h2>
-							</div>
-						</div>
-
-						<div class="photogallery__item photogallery__item_w50 photogallery__item_small">
-							<i></i>
-							<div class="photogallery__img">
-								<img src="img/mass3.jpg" alt="">
-							</div>
-							<div class="photogallery__title">
-								<h2 class="big">AUROra</h2>
-							</div>
-						</div>
-
-						<div class="photogallery__item photogallery__item_w50 photogallery__item_long">
-							<i></i>
-							<div class="photogallery__img">
-								<img src="img/mass4.jpg" alt="">
-							</div>
-							<div class="photogallery__title">
-								<h2 class="big">AUROra</h2>
-							</div>
-						</div>
-
-						<div class="photogallery__item photogallery__item_w50 photogallery__item_average">
-							<i></i>
-							<div class="photogallery__img">
-								<img src="img/mass2.jpg" alt="">
-							</div>
-							<div class="photogallery__title">
-								<h2 class="big">AUROra</h2>
-							</div>
-						</div>
-
-						<div class="photogallery__item photogallery__item_w50 photogallery__item_small">
-							<i></i>
-							<div class="photogallery__img">
-								<img src="img/mass3.jpg" alt="">
-							</div>
-							<div class="photogallery__title">
-								<h2 class="big">AUROra</h2>
-							</div>
-						</div>
-						<div class="photogallery__item photogallery__item_w50 photogallery__item_average">
-							<i></i>
-							<div class="photogallery__img">
-								<img src="img/mass2.jpg" alt="">
-							</div>
-							<div class="photogallery__title">
-								<h2 class="big">AUROra</h2>
-							</div>
-						</div>
-
-						<div class="photogallery__item photogallery__item_w50 photogallery__item_small">
-							<i></i>
-							<div class="photogallery__img">
-								<img src="img/mass3.jpg" alt="">
-							</div>
-							<div class="photogallery__title">
-								<h2 class="big">AUROra</h2>
-							</div>
-						</div>
-
-						<div class="photogallery__item photogallery__item_w50 photogallery__item_long">
-							<i></i>
-							<div class="photogallery__img">
-								<img src="img/mass4.jpg" alt="">
-							</div>
-							<div class="photogallery__title">
-								<h2 class="big">AUROra</h2>
-							</div>
-						</div>
-
-						<div class="photogallery__item photogallery__item_w50 photogallery__item_average">
-							<i></i>
-							<div class="photogallery__img">
-								<img src="img/mass2.jpg" alt="">
-							</div>
-							<div class="photogallery__title">
-								<h2 class="big">AUROra</h2>
-							</div>
-						</div>
-
-						<div class="photogallery__item photogallery__item_w50 photogallery__item_small">
-							<i></i>
-							<div class="photogallery__img">
-								<img src="img/mass3.jpg" alt="">
-							</div>
-							<div class="photogallery__title">
-								<h2 class="big">AUROra</h2>
-							</div>
-						</div>
-
-						<div class="photogallery__item photogallery__item_w50 photogallery__item_small">
-							<i></i>
-							<div class="photogallery__img">
-								<img src="img/mass3.jpg" alt="">
-							</div>
-							<div class="photogallery__title">
-								<h2 class="big">AUROra</h2>
-							</div>
-						</div>
-
-						<div class="photogallery__item photogallery__item_w50 photogallery__item_small">
-							<i></i>
-							<div class="photogallery__img">
-								<img src="img/mass3.jpg" alt="">
-							</div>
-							<div class="photogallery__title">
-								<h2 class="big">AUROra</h2>
-							</div>
-
-							<div class="photogallery__item photogallery__item_w50 photogallery__item_small">
-								<i></i>
-								<div class="photogallery__img">
-									<img src="img/mass3.jpg" alt="">
-								</div>
-								<div class="photogallery__title">
-									<h2 class="big">AUROra</h2>
-								</div>
-							</div>
-
-							<div class="photogallery__item photogallery__item_w50 photogallery__item_small">
-								<i></i>
-								<div class="photogallery__img">
-									<img src="img/mass3.jpg" alt="">
-								</div>
-								<div class="photogallery__title">
-									<h2 class="big">AUROra</h2>
-								</div>
-							</div>
-
-							<div class="photogallery__item photogallery__item_w50 photogallery__item_average">
-								<i></i>
-								<div class="photogallery__img">
-									<img src="img/mass2.jpg" alt="">
-								</div>
-								<div class="photogallery__title">
-									<h2 class="big">AUROra</h2>
-								</div>
-							</div>
-						</div>
+								<li><span class="sub-nav__active">Коллекции</span></li>
+								<li><a href="/ru/catalogue/type" style="padding: 0px">Тип товара</a></li>
+							</ul>                                </li>
+							<li><a href="/ru/advantages">Преимущества</a>
+							</li>
+							<li><a href="/ru/projects">Проекты</a>
+							</li>
+							<li><a href="/ru/buy">Где купить</a>
+							</li>
+							<li><a href="/ru/download">Скачать</a>
+							</li>
+							<li><a href="/ru/about">О компании</a>
+							</li>
+						</ul>
 					</div>
 				</div>
-				<!-- END kat -->
+				<div class="content content_subNav">
+					<ul class="breadcrumbs">
+						<li class="active"><a href="/ru/">Главная</a></li>
+						<li><a href="/ru/catalogue">Каталог</a></li>
+					</ul>    <h1 class="h33">Каталог <i class="i_waves"></i></h1>
 
+
+					<!-- BEGIN kat -->
+					<div class="kat">
+						<ul class="photogallery__nav">
+							<li class="active"><a href="/ru/catalogue/collections">Коллекции</a></li>
+							<li ><a href="/ru/catalogue/type">Тип товара</a></li>
+						</ul>
+						<div id="container" class="photogallery new-collection-list">
+							<a class="photogallery__item" href="/ru/catalogue/collections/aurora">
+								<div class="photogallery__img">
+									<img src="s/i/catalogue/collections/31389_aurora-small.jpg" alt="Aurora">
+								</div>
+								<div class="photogallery__title">
+									<h2 class="big">Aurora</h2>
+								</div>
+							</a>
+
+							<a class="photogallery__item" href="/ru/catalogue/collections/country">
+								<div class="photogallery__img">
+									<img src="s/i/catalogue/collections/31392_country-small.jpg" alt="Country">
+								</div>
+								<div class="photogallery__title">
+									<h2 class="big">Country</h2>
+								</div>
+							</a>
+
+							<a class="photogallery__item" href="/ru/catalogue/collections/katarina">
+								<div class="photogallery__img">
+									<img src="s/i/catalogue/collections/31397_katarina2_0-small.jpg" alt="Katarina 2.0">
+								</div>
+								<div class="photogallery__title">
+									<h2 class="big">Katarina 2.0</h2>
+								</div>
+							</a>
+
+							<a class="photogallery__item" href="/ru/catalogue/collections/fresh">
+								<div class="photogallery__img">
+									<img src="s/i/catalogue/collections/31393_fresh-small.jpg" alt="Fresh">
+								</div>
+								<div class="photogallery__title">
+									<h2 class="big">Fresh</h2>
+								</div>
+							</a>
+
+							<a class="photogallery__item" href="/ru/catalogue/collections/afina">
+								<div class="photogallery__img">
+									<img src="s/i/catalogue/collections/32349_afina-small.jpg" alt="Afina">
+								</div>
+								<div class="photogallery__title">
+									<h2 class="big">Afina</h2>
+								</div>
+							</a>
+
+							<a class="photogallery__item" href="/ru/catalogue/collections/optima">
+								<div class="photogallery__img">
+									<img src="s/i/catalogue/collections/31398_optima-small.jpg" alt="Optima">
+								</div>
+								<div class="photogallery__title">
+									<h2 class="big">Optima</h2>
+								</div>
+							</a>
+
+							<a class="photogallery__item" href="/ru/catalogue/collections/prestige">
+								<div class="photogallery__img">
+									<img src="s/i/catalogue/collections/31399_prestige-small.jpg" alt="Prestige">
+								</div>
+								<div class="photogallery__title">
+									<h2 class="big">Prestige</h2>
+								</div>
+							</a>
+
+							<a class="photogallery__item" href="/ru/catalogue/collections/vintage">
+								<div class="photogallery__img">
+									<img src="s/i/catalogue/collections/31403_vintage-small.jpg" alt="Vintage">
+								</div>
+								<div class="photogallery__title">
+									<h2 class="big">Vintage</h2>
+								</div>
+							</a>
+
+							<a class="photogallery__item" href="/ru/catalogue/collections/retro">
+								<div class="photogallery__img">
+									<img src="s/i/catalogue/collections/31400_retro-small.jpg" alt="Retro">
+								</div>
+								<div class="photogallery__title">
+									<h2 class="big">Retro</h2>
+								</div>
+							</a>
+
+							<a class="photogallery__item" href="/ru/catalogue/collections/sheffield">
+								<div class="photogallery__img">
+									<img src="s/i/catalogue/collections/31401_sheffield-small.jpg" alt="Sheffield">
+								</div>
+								<div class="photogallery__title">
+									<h2 class="big">Sheffield</h2>
+								</div>
+							</a>
+
+							<a class="photogallery__item" href="/ru/catalogue/collections/soul">
+								<div class="photogallery__img">
+									<img src="s/i/catalogue/collections/31402_soul-small.jpg" alt="Soul">
+								</div>
+								<div class="photogallery__title">
+									<h2 class="big">Soul</h2>
+								</div>
+							</a>
+
+							<a class="photogallery__item" href="/ru/catalogue/collections/iven">
+								<div class="photogallery__img">
+									<img src="s/i/catalogue/collections/32258_iven_01-small.jpg" alt="Iven">
+								</div>
+								<div class="photogallery__title">
+									<h2 class="big">Iven</h2>
+								</div>
+							</a>
+
+							<a class="photogallery__item" href="/ru/catalogue/collections/gredos">
+								<div class="photogallery__img">
+									<img src="s/i/catalogue/collections/31395_gredos-small.jpg" alt="Gredos">
+								</div>
+								<div class="photogallery__title">
+									<h2 class="big">Gredos</h2>
+								</div>
+							</a>
+
+    					<a class="photogallery__item" href="/ru/catalogue/collections/charlestone">
+								<div class="photogallery__img">
+									<img src="s/i/catalogue/collections/31390_charlestone-small.jpg" alt="Charlestone">
+								</div>
+								<div class="photogallery__title">
+									<h2 class="big">Charlestone</h2>
+								</div>
+							</a>
+
+							<a class="photogallery__item" href="/ru/catalogue/collections/comfort">
+								<div class="photogallery__img">
+									<img src="s/i/catalogue/collections/31391_comfort-small.jpg" alt="Comfort">
+								</div>
+								<div class="photogallery__title">
+									<h2 class="big">Comfort</h2>
+								</div>
+							</a>
+
+							<a class="photogallery__item" href="/ru/catalogue/collections/graphics">
+								<div class="photogallery__img">
+									<img src="s/i/catalogue/collections/31394_graphics-small.jpg" walt="Graphics">
+								</div>
+								<div class="photogallery__title">
+									<h2 class="big">Graphics</h2>
+								</div>
+							</a>
+						</div>
+					</div>
+					<!-- END kat -->
+
+				</div>
 			</div>
-			<!-- END content -->
-
 		</div>
-	</div>
-	<!-- END out -->
+		<!-- END out -->
 
-	<div class="waves waves_text">
-		<div class="waves__cont">
-			<p>
-				Интеллектуальная сантехника все больше набирает оборотов. Известный итальянский дизайнер Маттео Тун совместно со швейцарской компанией Geberit легко интегрировал последние модные тенденции в мире дизайна ванных комнат в простые и компактные формы подвесных унитазов нового поколения AquaClean Sela.
-			</p>
-			<p>
-				Современный дизайн коллекции дополняют различные функциональные инновации. Невидимые технологии, среди которых дистанционный пульт управления, регулируемое давление распыления воды, плавное и бесшумное закрытие и открытие крышки сиденья, делают коллекцию AquaClean Sela простой и удобной в эксплуатации.
-				Встроенный душ, возможность включения теплого фена для осушки, воздушное и легкое распыление воды гарантируют мягкое очищение, а обтекаемые и компактные формы AquaClean Sela значительно упрощают чистку и позволят гармонично вписать серию в абсолютно разные по стилистике иИнтеллектуальная сантехника все больше набирает оборотов. Известный итальянский дизайнер Маттео Тун совместно со швейцарской компанией Geberit легко интегрировал последние модные тенденции в мире дизайна ванных комнат в простые и компактные формы подвесных унитазов нового поколения AquaClean Sela.
-			</p>
-			<p>
-				Современный дизайн коллекции дополняют различные функциональные инновации. Невидимые технологии, среди которых дистанционный пульт управления, регулируемое давление распыления воды, плавное и бесшумное закрытие и открытие крышки сиденья, делают коллекцию
-			</p>
-		</div>
-	</div>
-
-	<!-- BEGIN footer -->
-	<div class="footer">
-		<div class="footer__wrap">
-			<div class="footer__left">
-				<div class="h3">Каталог</div>
-				<ul class="left">
-					<li><div class="h4">Коллекции</div></li>
-					<li><a href="#">test height test height</a></li>
-					<li><a href="#">Graphics</a></li>
-					<li><a href="#">Prestige</a></li>
-					<li><a href="#">Prestige</a></li>
-					<li><a href="#">Charlestone</a></li>
-					<li><a href="#">lorem 20</a></li>
-					<li><a href="#">lorem 20</a></li>
-					<li><a href="#">lorem 20</a></li>
-					<li><a href="#">lorem 20</a></li>
-					<li><a href="#">lorem 20</a></li>
-					<li><a href="#">lorem 20</a></li>
-					<li><a href="#">lorem 20</a></li>
-					<li><a href="#">lorem 20</a></li>
-					<li><a href="#">lorem 20</a></li>
-					<li><a href="#">lorem 20</a></li>
-					<li><a href="#">lorem 20</a></li>
-					<li><a href="#">lorem 20</a></li>
-					<li><a href="#">lorem 20</a></li>
-					<li><a href="#">lorem 20</a></li>
-					<li><a href="#">lorem 20</a></li>
-				</ul>
-				<ul class="right">
-					<li><div class="h4">Тип товара</div></li>
-					<li><a href="#">test height</a></li>
-					<li><a href="#">Graphics</a></li>
-					<li><a href="#">Prestige</a></li>
-					<li><a href="#">Prestige</a></li>
-					<li><a href="#">lorem 20 asdsadsad</a></li>
-					<li><a href="#">lorem 20</a></li>
-					<li><a href="#">lorem 20</a></li>
-					<li><a href="#">lorem 20</a></li>
-					<li><a href="#">Мебель для ванной комнаты</a></li>
-					<li><a href="#">lorem 20</a></li>
-					<li><a href="#">Душевая программа</a></li>
-				</ul>
+		<div class="waves"></div>
+		<!-- BEGIN footer -->
+		<div class="footer">
+			<div class="footer__wrap">
+				<div class="footer__map">Карта сайта</div>
+				<div class="footer__left">
+					<ul class="left">
+						<li><a href="/ru/catalogue/collections" class="h4">Коллекции</a></li>
+						<li><a href="/ru/catalogue/collections/afina">Afina</a></li>
+						<li><a href="/ru/catalogue/collections/aurora">Aurora</a></li>
+						<li><a href="/ru/catalogue/collections/charlestone">Charlestone</a></li>
+						<li><a href="/ru/catalogue/collections/comfort">Comfort</a></li>
+						<li><a href="/ru/catalogue/collections/country">Country</a></li>
+						<li><a href="/ru/catalogue/collections/fresh">Fresh</a></li>
+						<li><a href="/ru/catalogue/collections/graphics">Graphics</a></li>
+						<li><a href="/ru/catalogue/collections/gredos">Gredos</a></li>
+						<li><a href="/ru/catalogue/collections/iven">Iven</a></li>
+						<li><a href="/ru/catalogue/collections/katarina">Katarina 2.0</a></li>
+						<li><a href="/ru/catalogue/collections/optima">Optima</a></li>
+						<li><a href="/ru/catalogue/collections/prestige">Prestige</a></li>
+						<li><a href="/ru/catalogue/collections/retro">Retro</a></li>
+						<li><a href="/ru/catalogue/collections/sheffield">Sheffield</a></li>
+						<li><a href="/ru/catalogue/collections/soul">Soul</a></li>
+						<li><a href="/ru/catalogue/collections/vintage">Vintage</a></li>
+					</ul>
+					<ul class="right">
+						<li><a href="/ru/catalogue/type" class="h4">Тип товара</a></li>
+						<li><a href="/ru/catalogue/type/aksessuary">Аксессуары</a></li>
+						<li><a href="/ru/catalogue/type/vanny">Ванны</a></li>
+						<li><a href="/ru/catalogue/type/dushevaya-programma">Душевая программа</a></li>
+						<li><a href="/ru/catalogue/type/dushevye-kabiny">Душевые кабины</a></li>
+						<li><a href="/ru/catalogue/type/mebel-dlya-vannoy-komnaty">Мебель для ванной комнаты</a></li>
+						<li><a href="/ru/catalogue/type/parovye-boksy">Паровые боксы</a></li>
+						<li><a href="/ru/catalogue/type/polotentsesushiteli">Полотенцесушители</a></li>
+						<li><a href="/ru/catalogue/type/rakoviny">Раковины</a></li>
+						<li><a href="/ru/catalogue/type/sifony">Сифоны</a></li>
+						<li><a href="/ru/catalogue/type/smesiteli">Смесители</a></li>
+						<li><a href="/ru/catalogue/type/unitazy-i-bide">Унитазы и биде</a></li>
+						<li><a href="/ru/catalogue/type/urinaly">Уриналы</a></li>
+					</ul>
+				</div>
+				<div class="footer__right">
+					<ul class="left">
+						<li><a href="/ru/catalogue">Каталог</a></li>
+						<li><a href="/ru/advantages">Преимущества</a></li>
+						<li><a href="/ru/projects">Проекты</a></li>
+						<li><a href="/ru/buy">Где купить</a></li>
+						<li><a href="/ru/download">Скачать</a></li>
+					</ul>
+					<dl>
+						<dt><a href="/ru/about">О компании</a></dt>
+						<dd><a href="/ru/about/news">Новости</a></dd>
+						<dd><a href="/ru/about/service">Сервис</a></dd>
+						<dd><a href="/ru/about/contacts">Контакты</a></dd>
+					</dl>
+				</div>
 			</div>
-			<div class="footer__right">
-				<ul class="left">
-					<li><a href="#">lorem 13123</a></li>
-					<li><a href="#">lorem 13123</a></li>
-					<li><a href="#">lorem 13123</a></li>
-					<li><a href="#">lorem 13123</a></li>
-					<li><a href="#">lorem 13123</a></li>
-					<li><a href="#">lorem 13123</a></li>
-				</ul>
-				<dl>
-					<dt>О компании</dt>
-					<dd><a href="#">lorem 10</a></dd>
-					<dd><a href="#">lorem 20</a></dd>
-					<dd><a href="#">lorem 30</a></dd>
-				</dl>
-			</div>
-		</div>
 			<div class="copyright">
 				<div class="footer__wrap">
 					<div class="copyright__logo"></div>
-					<div class="copyright__info">© 2010-2013, Devit. Все права защищены.</div>
+					<div class="copyright__info">© 2010-2016, Devit. Все права защищены.</div>
 				</div>
 			</div>
-	</div>
-	<!-- END footer -->
-</body>
-</html>
+		</div>
+		<!-- END footer -->
+	</body>
+	</html>
