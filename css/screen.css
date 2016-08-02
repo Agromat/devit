@@ -353,8 +353,6 @@ a:hover { text-decoration: underline; }
 
 .js-masonry { margin-left: 10px; padding-bottom: 14px; }
 
-.photogallery { text-align: center; }
-
 .photogallery { text-align: center; padding-bottom: 35px; }
 
 .photogallery__nav { list-style: none; margin-bottom: 10px; }
@@ -364,11 +362,7 @@ a:hover { text-decoration: underline; }
 .photogallery__nav .active a { font-family: 'Conv_DlCyRgTf', sans-serif; color: #fff; }
 .photogallery__nav a { font-size: 22px; font-family: 'Conv_DlCyRgTf', sans-serif; color: #1895e6; text-transform: uppercase; text-decoration: none; }
 
-<<<<<<< HEAD
-.photogallery__item { margin: 10px 10px 0; position: relative; width: 275px; height: 170px; display: inline-block; text-align: left; }
-=======
-.photogallery__item { margin: 10px 10px 0; position: relative; text-align: left; width: 23%; display: inline-block; }
->>>>>>> remotes/origin/bruslik.d
+.photogallery__item { margin: 10px 10px 0; position: relative; width: 23%; height: 170px; display: inline-block; text-align: left; }
 .photogallery__item i { width: 100%; height: 100%; position: absolute; top: 0; left: 0; z-index: 1000; }
 .photogallery__item i:hover { filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80); opacity: 0.8; background-color: #4db7fb; cursor: pointer; }
 
@@ -382,13 +376,8 @@ a:hover { text-decoration: underline; }
 
 .photogallery__item_small .photogallery__img img { height: 127px; }
 
-<<<<<<< HEAD
-.photogallery__img { overflow: hidden; }
-.photogallery__img img { vertical-align: top; width: 100%; height: 170px; }
-=======
 .photogallery__img { overflow: hidden; height: 170px; }
 .photogallery__img img { vertical-align: top; width: 100%; height: auto; min-height: 170px; }
->>>>>>> remotes/origin/bruslik.d
 .photogallery__img:hover { cursor: pointer; }
 
 .photogallery__title { padding: 2px 20px; background: #000; position: absolute; bottom: 0; left: 0; right: 0; }
@@ -1000,15 +989,6 @@ a:hover { text-decoration: underline; }
 @media only screen and (min-width: 320px) and (max-width: 499px) { .support { width: auto; margin: 0px 0 20px; padding: 40px 20px; float: none; }
   .contact-form { width: 90%; margin: 0 5%; }
   .contact-form textarea, .contact-form input { width: 100%; } }
-<<<<<<< HEAD
-@media only screen and (min-width: 768px) and (max-width: 960px) { .header .nav { padding-top: 0px; }
-  .header .nav .is-thereIsDropNaw { height: 27px; line-height: 27px; } }
-@media only screen and (min-width: 768px) and (max-width: 1322px) { .photogallery__item { margin: 10px 1% 0; width: 31%; transition: 0.2s; }
-  .preLastItem { margin-left: 16.5%; }
-  .lastItem { margin-left: 34%; } }
-@media only screen and (min-width: 320px) and (max-width: 767px) { .header .nav { height: auto; }
-  .header .nav li { height: 31px; line-height: 31px; } }
-=======
 @media only screen and (min-width: 320px) and (max-width: 482px) { .proj__item { width: 100%; }
   .proj__img { width: 100%; }
   .proj__img img { width: 100%; }
@@ -1018,7 +998,6 @@ a:hover { text-decoration: underline; }
   .proj__item_ImgBottom .triangle { top: 260px; left: auto; right: 15px; } }
 @media only screen and (min-width: 100px) and (max-width: 570px) { .sity { width: 96%; padding: 2%; } }
 @media only screen and (min-width: 100px) and (max-width: 439px) { .product__item { width: 90%; margin: 0 4%; } }
->>>>>>> remotes/origin/bruslik.d
 .lang a, .lang span { display: inline-block; padding: 3px 7px; text-decoration: none; font-family: "Calibri", Helvetica, sans-serif; color: #4db7fc; }
 
 .search input { border: 1px solid #e3e6e8; padding: 0 10px; height: 29px; font-family: "Calibri", Helvetica, sans-serif; }
