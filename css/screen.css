@@ -728,6 +728,7 @@ a:hover { text-decoration: none; border-bottom: 2px solid; }
   .copyright .copyright__info { right: 10px; } }
 @media only screen and (min-width: 961px) and (max-width: 972px) { .news__items a { margin-left: 0; padding: 0 40px; } }
 @media only screen and (min-width: 959px) and (max-width: 976px) { .wrap, .content, .slider, .news:after { width: 100%; } }
+@media only screen and (min-width: 768px) and (max-width: 1235px) { .photogallery__item { width: 31%; margin: 10px 1% 0; } }
 @media only screen and (min-width: 768px) and (max-width: 960px) { .header { padding: 0 9px; }
   .logo { margin-right: 25px; }
   .wrap { width: auto; padding: 0 9px; }
@@ -762,7 +763,6 @@ a:hover { text-decoration: none; border-bottom: 2px solid; }
   .news:after { width: 100%; }
   .news .news__item { width: 210px; margin-left: 10px; }
   .js-masonry { margin-left: 13px; }
-  .photogallery__item { margin: 14px 1% 0 1%; width: 47%; }
   .kat__media { width: 265px; margin-right: 0; }
   .kat__media:before { top: 80px; left: 85px; }
   .kat__media img { width: 265px; }
@@ -1123,7 +1123,9 @@ a:hover { text-decoration: none; border-bottom: 2px solid; }
 /* MEDIA┬а*/
 @media only screen and (min-width: 768px) and (max-width: 960px) { .slider_collection .slider__item { width: 29%; } }
 @media only screen and (min-width: 320px) and (max-width: 767px) { .wrap_index .mobile-list__cont a, .wrap_index .mobile-list__cont span { color: #FFF; text-decoration: none; }
-  .photogallery__item { width: 45%; margin: 0px 2% 2%; height: auto; }
+  .photogallery__item { width: 47%; margin: 0px 2% 2%; height: auto; }
+  .photogallery__item:nth-child(n) { margin-right: 1%; }
+  .photogallery__item:nth-child(2n) { margin-left: 1%; }
   .photogallery__item_w100, .photogallery__item_w50 { width: 45%; margin: 0px 2% 10px; }
   .kat .kat__media { width: auto; margin: 0 2%; float: left; }
   .kat .kat__media a { display: inline-block; }
@@ -1150,4 +1152,3 @@ a:hover { text-decoration: none; border-bottom: 2px solid; }
   .kat .kat__descr .kat__title-wrap { margin-left: 0; }
   .kat .kat__media { position: relative; width: 90%; height: 160px; margin: 0 5% 25px; border: 1px solid #c6c6c6; text-align: center; }
   .kat__info ul { list-style-position: inside; } }
-@media only screen and (min-width: 460px) and (max-width: 767px) { .photogallery__item:nth-child(2n) { margin-left: 3%; } }

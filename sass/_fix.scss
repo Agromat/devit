@@ -546,10 +546,17 @@
     text-decoration: none;
   }
   .photogallery__item {
-    width: 45%;
+    width: 47%;
     margin: 0px 2% 2%;
-    height: auto;  
+    height: auto;
+    &:nth-child(n){
+      margin-right: 1%;
+    }
+    &:nth-child(2n){
+      margin-left: 1%;
+    }
   }
+
   .photogallery__item_w100, .photogallery__item_w50 {
     width: 45%;
     margin: 0px 2% 10px;
@@ -678,13 +685,6 @@
   }
   .kat__info ul { 
   	list-style-position: inside;
-  }
-}
-@media only screen and (min-width: 460px) and (max-width: 767px) {
-  .photogallery__item {
-     &:nth-child(2n){
-        margin-left: 3%;
-     }
   }
 }
 // fix  .waves
