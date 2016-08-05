@@ -14,7 +14,7 @@ body { font-family: "Calibri", Helvetica, Arial, sans-serif; font-weight: normal
 a img, fieldset { border: none; }
 
 a { color: #4EB6FA; text-decoration: none; }
-a:hover { text-decoration: underline; }
+a:hover { text-decoration: none; border-bottom: 2px solid; }
 
 @font-face { font-family: 'Conv_DlCyLtTf'; src: url("../fonts/DlCyLtTf.eot"); src: url("../fonts/DlCyLtTf.woff") format("woff"), url("../fonts/DlCyLtTf.ttf") format("truetype"), url("../fonts/DlCyLtTf.svg") format("svg"); font-weight: normal; font-style: normal; }
 @font-face { font-family: 'Conv_DlCyRgTf'; src: url("../fonts/DlCyRgTf.eot"); src: url("../fonts/DlCyRgTf.woff") format("woff"), url("../fonts/DlCyRgTf.ttf") format("truetype"), url("../fonts/DlCyRgTf.svg") format("svg"); font-weight: normal; font-style: normal; }
@@ -276,7 +276,7 @@ a:hover { text-decoration: underline; }
 .kat__nav a { padding: 5px 0 5px 10px; background: #000; display: block; font-family: 'Conv_DlCyLtTf', sans-serif; font-size: 14px; text-decoration: none; color: #FFF; }
 .kat__nav a:hover { background: #FFF; color: #4db7fc; }
 
-.kat__conteiner { width: auto; padding: 35px 0; border-left: 175px solid #000; background: #fff; font-size: 0; }
+.kat__conteiner { width: 90%; padding: 35px 0; border-left: 175px solid #000; background: #fff; font-size: 0; }
 
 .kat__media { width: 365px; margin-left: 30px; display: inline-block; position: relative; }
 .kat__media:hover { cursor: pointer; }
@@ -293,11 +293,13 @@ a:hover { text-decoration: underline; }
 
 .kat__kode { margin-bottom: 5px; text-transform: uppercase; color: #323c41; opacity: 0.5; font-family: "Calibri", Helvetica, sans-serif; font-size: 14px; }
 
-.kat__config h2 { font-size: 16px; margin: 25px 0 12px; color: #7f7f7f; }
+.kat__config h2, .kat__config .h2 { font-size: 16px; margin: 25px 0 12px; color: #7f7f7f; }
+.kat__config .h2 { display: block; font-weight: bold; }
 .kat__config .product-item { display: inline-block; margin: 0 25px 10px 0; }
-.kat__config .product-item a img { width: 80px; height: 80px; border: 1px solid #e5e5e5; }
-.kat__config .product-item a span { display: block; font-size: 14px; }
-.kat__config .product-item a .brand { font-weight: bold; color: #4fb8fc; margin-top: 5px; }
+.kat__config .product-item a img { width: 80px; height: 82px; border: 1px solid #e5e5e5; }
+.kat__config .product-item a span { display: block; font-size: 14px; height: 16px; box-sizing: border-box; }
+.kat__config .product-item a:hover span { border-bottom: 1px solid #4fb8fc; }
+.kat__config .product-item a .brand { font-weight: bold; color: #4fb8fc; margin-top: 5px; width: 73px; }
 .kat__config .product-item a .model { color: #b1b2b2; text-transform: uppercase; }
 
 .kat__group { height: 25px; line-height: 25px; padding: 0 10px; display: inline-block; background: #4fb8fc; text-decoration: none; font-size: 11px; color: #FFF; float: left; -moz-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; -webkit-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; }
@@ -335,7 +337,7 @@ a:hover { text-decoration: underline; }
 
 .kat_mod { padding: 20px 20px 35px; }
 .kat_mod .kat_mod__cont { font-family: "Calibri", Helvetica, sans-serif; font-size: 14px; line-height: 1.4; }
-.kat_mod .kat_mod__cont h2 { margin-bottom: 15px; overflow: hidden; font-family: "Calibri", Helvetica, sans-serif; font-size: 26px; line-height: 1; color: #4eb6fa; }
+.kat_mod .kat_mod__cont h2, .kat_mod .kat_mod__cont .kat__config .h2, .kat__config .kat_mod .kat_mod__cont .h2 { margin-bottom: 15px; overflow: hidden; font-family: "Calibri", Helvetica, sans-serif; font-size: 26px; line-height: 1; color: #4eb6fa; }
 .kat_mod .kat_mod__cont p { margin-bottom: 10px; }
 .kat_mod .kat_mod__cont h4 { font-family: "Calibri", Helvetica, sans-serif; font-weight: bold; font-size: 18px; color: #4eb6fa; }
 .kat_mod .kat_mod__cont ul, .kat_mod .kat_mod__cont ol { float: left; list-style: none; }
@@ -381,7 +383,7 @@ a:hover { text-decoration: underline; }
 .photogallery__img:hover { cursor: pointer; }
 
 .photogallery__title { padding: 2px 20px; background: #000; position: absolute; bottom: 0; left: 0; right: 0; }
-.photogallery__title h2 { text-transform: uppercase; font-family: 'Conv_DlCyLtTf', sans-serif; color: #FFF; }
+.photogallery__title h2, .photogallery__title .kat__config .h2, .kat__config .photogallery__title .h2 { text-transform: uppercase; font-family: 'Conv_DlCyLtTf', sans-serif; color: #FFF; }
 .photogallery__title .big { font-family: 'Conv_DlCyLtTf', sans-serif; font-weight: normal; font-size: 26px; }
 
 .product { list-style-type: none; text-align: center; padding: 0 10px; }
@@ -540,14 +542,14 @@ a:hover { text-decoration: underline; }
 .scroll__item:hover .date { background: #eaf6ff; border: 1px solid #eaf6ff; }
 .scroll__item:hover .date .date__number, .scroll__item:hover .date .date__day { opacity: 0.4; }
 .scroll__item:hover a { color: #305269; text-decoration: underline; }
-.scroll__item:hover h2 span { color: #4eb6fa; text-decoration: none; }
+.scroll__item:hover h2 span, .scroll__item:hover .kat__config .h2 span, .kat__config .scroll__item:hover .h2 span { color: #4eb6fa; text-decoration: none; }
 
 .scroll__media { width: 159px; height: 159px; border-radius: 50%; margin-right: 25px; float: left; }
 .scroll__media img { border: 5px solid transparent; width: 100%; height: 100%; -webkit-border-radius: 159px; border-radius: 159px; }
 .scroll__media a { display: block; }
 
 .scroll__cont { width: 510px; padding: 25px 0; float: left; font-family: "Calibri", Helvetica, sans-serif; font-size: 14px; color: #323c41; line-height: 1.3; }
-.scroll__cont h2, .scroll__cont a { margin-bottom: 10px; font-family: "Calibri", Helvetica, sans-serif; font-size: 25px; color: #4eb6fa; line-height: 1; text-decoration: none; }
+.scroll__cont h2, .scroll__cont .kat__config .h2, .kat__config .scroll__cont .h2, .scroll__cont a { margin-bottom: 10px; font-family: "Calibri", Helvetica, sans-serif; font-size: 25px; color: #4eb6fa; line-height: 1; text-decoration: none; }
 
 .scroll__cont_news { overflow: hidden; }
 
@@ -598,7 +600,7 @@ a:hover { text-decoration: underline; }
 .support .mail-to { margin-top: 15px; }
 
 .contact-form { float: left; }
-.contact-form h2 { display: inline-block; margin-bottom: 40px; font-size: 25px; color: #4eb6fa; }
+.contact-form h2, .contact-form .kat__config .h2, .kat__config .contact-form .h2 { display: inline-block; margin-bottom: 40px; font-size: 25px; color: #4eb6fa; }
 .contact-form textarea, .contact-form input { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; width: 375px; display: block; margin-bottom: 10px; border: 1px solid #e3e6e8; font-family: "Calibri", Helvetica, sans-serif; font-size: 14px; color: #323c41; opacity: 0.6; }
 .contact-form textarea { padding: 15px 20px; min-height: 138px; resize: vertical; }
 .contact-form input { padding: 0 20px; height: 38px; }
@@ -726,6 +728,7 @@ a:hover { text-decoration: underline; }
   .copyright .copyright__info { right: 10px; } }
 @media only screen and (min-width: 961px) and (max-width: 972px) { .news__items a { margin-left: 0; padding: 0 40px; } }
 @media only screen and (min-width: 959px) and (max-width: 976px) { .wrap, .content, .slider, .news:after { width: 100%; } }
+@media only screen and (min-width: 768px) and (max-width: 1235px) { .photogallery__item { width: 31%; margin: 10px 1% 0; } }
 @media only screen and (min-width: 768px) and (max-width: 960px) { .header { padding: 0 9px; }
   .logo { margin-right: 25px; }
   .wrap { width: auto; padding: 0 9px; }
@@ -760,7 +763,6 @@ a:hover { text-decoration: underline; }
   .news:after { width: 100%; }
   .news .news__item { width: 210px; margin-left: 10px; }
   .js-masonry { margin-left: 13px; }
-  .photogallery__item { margin: 14px 1% 0 1%; width: 47%; }
   .kat__media { width: 265px; margin-right: 0; }
   .kat__media:before { top: 80px; left: 85px; }
   .kat__media img { width: 265px; }
@@ -1038,7 +1040,7 @@ a:hover { text-decoration: underline; }
 
 .kat__nav a:hover { background: transparent; -webkit-box-shadow: inset 0 0 0 1px white; -moz-box-shadow: inset 0 0 0 1px white; box-shadow: inset 0 0 0 1px white; color: #FFF; }
 
-.kat__conteiner { width: auto; padding: 35px 0; border-left: 175px solid #000; background: #fff; font-size: 0; }
+.kat__conteiner { width: 90%; padding: 35px 0; border-left: 175px solid #000; background: #fff; font-size: 0; }
 
 .kat__title { margin-bottom: 20px; font-family: "Calibri", Helvetica, sans-serif; font-size: 25px; line-height: 1; color: #4eb6fa; }
 
@@ -1056,7 +1058,7 @@ a:hover { text-decoration: underline; }
 
 .kat_mod .kat_mod__cont { font-family: "Calibri", Helvetica, sans-serif; font-size: 14px; line-height: 1.4; }
 
-.kat_mod .kat_mod__cont h2 { margin-bottom: 15px; overflow: hidden; font-family: "Calibri", Helvetica, sans-serif; font-size: 26px; line-height: 1; color: #4eb6fa; }
+.kat_mod .kat_mod__cont h2, .kat_mod .kat_mod__cont .kat__config .h2, .kat__config .kat_mod .kat_mod__cont .h2 { margin-bottom: 15px; overflow: hidden; font-family: "Calibri", Helvetica, sans-serif; font-size: 26px; line-height: 1; color: #4eb6fa; }
 
 .kat_mod .kat_mod__cont h4 { font-family: "Calibri", Helvetica, sans-serif; font-weight: bold; font-size: 18px; color: #4eb6fa; }
 
@@ -1066,7 +1068,7 @@ a:hover { text-decoration: underline; }
 
 .kat_mod2 { padding: 35px; font-family: "Calibri", Helvetica, sans-serif; font-size: 14px; line-height: 1.4; }
 
-.photogallery__title h2 { text-transform: uppercase; font-family: 'Conv_DlCyLtTf', sans-serif; color: #FFF; }
+.photogallery__title h2, .photogallery__title .kat__config .h2, .kat__config .photogallery__title .h2 { text-transform: uppercase; font-family: 'Conv_DlCyLtTf', sans-serif; color: #FFF; }
 
 .photogallery__title .big { font-family: 'Conv_DlCyLtTf', sans-serif; font-weight: normal; font-size: 26px; }
 
@@ -1106,7 +1108,7 @@ a:hover { text-decoration: underline; }
 
 .collection li:first-child p { color: #4eb6fa; font-size: 18px; font-family: "Calibri", Helvetica, sans-serif; font-weight: bold; }
 
-.scroll__cont h2, .scroll__cont a { margin-bottom: 10px; font-family: "Calibri", Helvetica, sans-serif; font-size: 25px; color: #4eb6fa; line-height: 1; text-decoration: none; }
+.scroll__cont h2, .scroll__cont .kat__config .h2, .kat__config .scroll__cont .h2, .scroll__cont a { margin-bottom: 10px; font-family: "Calibri", Helvetica, sans-serif; font-size: 25px; color: #4eb6fa; line-height: 1; text-decoration: none; }
 
 .tradeMark__title { font-family: "Calibri", Helvetica, sans-serif; font-weight: bold; font-size: 18px; color: #4eb6fa; }
 
@@ -1121,7 +1123,9 @@ a:hover { text-decoration: underline; }
 /* MEDIA┬а*/
 @media only screen and (min-width: 768px) and (max-width: 960px) { .slider_collection .slider__item { width: 29%; } }
 @media only screen and (min-width: 320px) and (max-width: 767px) { .wrap_index .mobile-list__cont a, .wrap_index .mobile-list__cont span { color: #FFF; text-decoration: none; }
-  .photogallery__item { width: 45%; margin: 0px 2% 2%; height: auto; }
+  .photogallery__item { width: 47%; margin: 0px 2% 2%; height: auto; }
+  .photogallery__item:nth-child(n) { margin-right: 1%; }
+  .photogallery__item:nth-child(2n) { margin-left: 1%; }
   .photogallery__item_w100, .photogallery__item_w50 { width: 45%; margin: 0px 2% 10px; }
   .kat .kat__media { width: auto; margin: 0 2%; float: left; }
   .kat .kat__media a { display: inline-block; }
@@ -1148,4 +1152,3 @@ a:hover { text-decoration: underline; }
   .kat .kat__descr .kat__title-wrap { margin-left: 0; }
   .kat .kat__media { position: relative; width: 90%; height: 160px; margin: 0 5% 25px; border: 1px solid #c6c6c6; text-align: center; }
   .kat__info ul { list-style-position: inside; } }
-@media only screen and (min-width: 460px) and (max-width: 767px) { .photogallery__item:nth-child(2n) { margin-left: 3%; } }

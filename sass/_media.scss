@@ -293,6 +293,12 @@
 		width: 100%;
 	}
 }
+@media only screen and (min-width: 768px) and (max-width: 1235px){
+	.photogallery__item{
+		width: 31%;
+		margin: 10px 1% 0;
+	}
+}
 @media only screen and (min-width: 768px) and (max-width: 960px){
 	// layout for all pages
 	.header{
@@ -450,15 +456,6 @@
 	// catalogue
 	.js-masonry{
 		margin-left: 13px;
-	}
-	.photogallery__item{
-		margin: 14px 1% 0 1%;
-		width: 47%;
-		.photogallery__img{
-			img{
-				// width: 100%;
-			}
-		}
 	}
 	// catalogue_item.html
 	.kat__media{
