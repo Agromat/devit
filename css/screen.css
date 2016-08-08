@@ -14,7 +14,7 @@ body { font-family: "Calibri", Helvetica, Arial, sans-serif; font-weight: normal
 a img, fieldset { border: none; }
 
 a { color: #4EB6FA; text-decoration: none; }
-a:hover { text-decoration: none; border-bottom: 2px solid; }
+a:hover { text-decoration: underline; }
 
 @font-face { font-family: 'Conv_DlCyLtTf'; src: url("../fonts/DlCyLtTf.eot"); src: url("../fonts/DlCyLtTf.woff") format("woff"), url("../fonts/DlCyLtTf.ttf") format("truetype"), url("../fonts/DlCyLtTf.svg") format("svg"); font-weight: normal; font-style: normal; }
 @font-face { font-family: 'Conv_DlCyRgTf'; src: url("../fonts/DlCyRgTf.eot"); src: url("../fonts/DlCyRgTf.woff") format("woff"), url("../fonts/DlCyRgTf.ttf") format("truetype"), url("../fonts/DlCyRgTf.svg") format("svg"); font-weight: normal; font-style: normal; }
@@ -298,9 +298,11 @@ a:hover { text-decoration: none; border-bottom: 2px solid; }
 .kat__config .product-item { display: inline-block; margin: 0 25px 10px 0; }
 .kat__config .product-item a img { width: 80px; height: 82px; border: 1px solid #e5e5e5; }
 .kat__config .product-item a span { display: block; font-size: 14px; height: 16px; box-sizing: border-box; }
-.kat__config .product-item a:hover span { border-bottom: 1px solid #4fb8fc; }
 .kat__config .product-item a .brand { font-weight: bold; color: #4fb8fc; margin-top: 5px; width: 73px; }
 .kat__config .product-item a .model { color: #b1b2b2; text-transform: uppercase; }
+.kat__config .product-item a:hover { text-decoration: none; }
+.kat__config .product-item a:hover span { color: #4fb8fc; border-bottom: 1px solid #4fb8fc; }
+.kat__config .product-item a:hover img { border-color: #4fb8fc; }
 
 .kat__group { height: 25px; line-height: 25px; padding: 0 10px; display: inline-block; background: #4fb8fc; text-decoration: none; font-size: 11px; color: #FFF; float: left; -moz-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; -webkit-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; }
 .kat__group span { margin-left: 10px; text-transform: uppercase; }
