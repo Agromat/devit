@@ -1058,11 +1058,12 @@
 					height: 16px;
 					box-sizing:border-box;
 				}
-				&:hover{
-					span{
-						border-bottom: 1px solid #4fb8fc;
-					}
-				}
+				// &:hover{
+				// 	span{
+				// 		color: #4fb8fc;
+				// 		border-bottom: 1px solid #4fb8fc;
+				// 	}
+				// }
 				.brand{
 					font-weight: bold;
 					color: #4fb8fc;
@@ -1072,6 +1073,16 @@
 				.model{
 					color: #b1b2b2;
 					text-transform: uppercase;
+				}
+				&:hover{
+					text-decoration: none;
+					span{
+						color: #4fb8fc;
+						border-bottom: 1px solid #4fb8fc;
+					}
+					img{
+						border-color: #4fb8fc;
+					}
 				}
 			}
 		}
