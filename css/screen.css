@@ -381,7 +381,7 @@ a:hover { text-decoration: underline; }
 .photogallery__item_small .photogallery__img img { height: 127px; }
 
 .photogallery__img { overflow: hidden; height: 170px; }
-.photogallery__img img { vertical-align: top; width: 100%; height: auto; min-height: 170px; }
+.photogallery__img img { vertical-align: top; width: 100%; height: auto; }
 .photogallery__img:hover { cursor: pointer; }
 
 .photogallery__title { padding: 2px 20px; background: #000; position: absolute; bottom: 0; left: 0; right: 0; }
