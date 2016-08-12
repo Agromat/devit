@@ -894,7 +894,7 @@ a:hover { text-decoration: underline; }
   .photogallery__item_long .photogallery__img img, .photogallery__item_small .photogallery__img img { height: auto; }
   .photogallery__nav { width: 100%; margin: 9px 3% 19px; display: block; }
   .photogallery__nav li { padding: 0; line-height: 1.2; }
-  .photogallery__nav a { height: 44px; padding: 15px 10px; font-size: 18px; text-shadow: none; width: 44%; display: block; }
+  .photogallery__nav a { height: 44px; padding: 15px 10px; font-size: 18px; text-shadow: none; display: block; }
   .kat { margin: 9px; }
   .waves:before { top: -8px; background: url(../_img/icons/waves__mobile.png) 0px 0px repeat-x; }
   .wrap_paddingBottomForMobile { padding-bottom: 10px; }
@@ -1000,6 +1000,7 @@ a:hover { text-decoration: underline; }
   .proj__item_ImgBottom .proj__img { margin-top: 0; position: static; }
   .proj__item_ImgBottom .proj__descr { position: static !important; }
   .proj__item_ImgBottom .triangle { top: 260px; left: auto; right: 15px; } }
+@media only screen and (min-width: 320px) and (max-width: 480px) { .photogallery__nav li { width: 40%; margin-left: 5%; text-align: center; } }
 @media only screen and (min-width: 100px) and (max-width: 570px) { .sity { width: 96%; padding: 2%; } }
 @media only screen and (min-width: 100px) and (max-width: 439px) { .product__item { width: 90%; margin: 0 4%; } }
 .lang a, .lang span { display: inline-block; padding: 3px 7px; text-decoration: none; font-family: "Calibri", Helvetica, sans-serif; color: #4db7fc; }
