@@ -897,8 +897,8 @@ a:hover { text-decoration: underline; }
   .photogallery__item_w100 .photogallery__img img, .photogallery__item_w50 .photogallery__img img { width: 100%; min-width: 100%; }
   .photogallery__item_long .photogallery__img img, .photogallery__item_small .photogallery__img img { height: auto; }
   .photogallery__nav { width: 100%; margin: 9px 3% 19px; display: block; }
-  .photogallery__nav li { height: auto; padding: 0; line-height: 1.2; }
-  .photogallery__nav a { padding: 15px 10px; font-size: 15px; text-shadow: none; display: block; }
+  .photogallery__nav li { height: 44px; padding: 0; line-height: 1.2; }
+  .photogallery__nav a { padding: 13px 10px 12px; font-size: 15px; text-shadow: none; display: block; }
   .kat { margin: 9px; }
   .waves:before { top: -8px; background: url(../_img/icons/waves__mobile.png) 0px 0px repeat-x; }
   .wrap_paddingBottomForMobile { padding-bottom: 10px; }
