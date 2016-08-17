@@ -1437,23 +1437,35 @@
 			cursor: pointer;
 		}
 	}
-	.photogallery__title{
-		padding: 2px 20px;
-		background: #000;
-		position: absolute;
-		bottom: 0;
-		left: 0;
-		right: 0;
-		h2{
-			text-transform: uppercase;
-			font-family: 'Conv_DlCyLtTf', sans-serif;
-			color: #FFF;
-		}
-		.big{
-			font-family: 'Conv_DlCyLtTf', sans-serif;
-			font-weight: normal;
-			font-size: 26px;
-		}
+}
+.photogallery__img{
+	overflow: hidden;
+	height: 170px;
+	img{
+		vertical-align: top;
+		width: 100%;
+		height: auto;
+	}
+	&:hover{
+		cursor: pointer;
+	}
+}
+.photogallery__title{
+	padding: 2px 20px;
+	background: #000;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	h2{
+		text-transform: uppercase;
+		font-family: 'Conv_DlCyLtTf', sans-serif;
+		color: #FFF;
+	}
+	.big{
+		font-family: 'Conv_DlCyLtTf', sans-serif;
+		font-weight: normal;
+		font-size: 26px;
 	}
 // pduct
 .product{
