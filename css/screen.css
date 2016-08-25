@@ -296,7 +296,7 @@ a:hover { text-decoration: underline; }
 .kat__config h2, .kat__config .h2 { font-size: 16px; margin: 25px 0 12px; color: #7f7f7f; }
 .kat__config .h2 { display: block; font-weight: bold; }
 .kat__config .product-item { display: inline-block; margin: 0 25px 10px 0; }
-.kat__config .product-item a img { width: 80px; height: 82px; border: 1px solid #e5e5e5; }
+.kat__config .product-item a img { width: 80px; border: 1px solid #e5e5e5; }
 .kat__config .product-item a span { display: block; font-size: 14px; height: 16px; box-sizing: border-box; }
 .kat__config .product-item a .brand { font-weight: bold; color: #4fb8fc; margin-top: 5px; width: 73px; }
 .kat__config .product-item a .model { color: #b1b2b2; text-transform: uppercase; }
